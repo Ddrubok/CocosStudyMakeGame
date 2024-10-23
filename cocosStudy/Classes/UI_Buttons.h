@@ -16,7 +16,7 @@ private:
 
 public:
     virtual bool init() override {
-        if (!UI_Base::init()) {
+        if (_init) {
             return false;
         }
 
