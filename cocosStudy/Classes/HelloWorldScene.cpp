@@ -25,7 +25,6 @@
 #include "HelloWorldScene.h"
 #include "Managers.h"
 #include "GameManager.h"
-#include "UI_ButtonTest.h"
 
 USING_NS_CC;
 
@@ -52,13 +51,7 @@ bool HelloWorld::init()
         return false;
 
     
-    UI_ButtonTest* equipmentButton = UI_ButtonTest::create();
-    
-    equipmentButton->setItemType(ItemType::Armor); // 아이템 타입 설정
-    equipmentButton->setPosition(cocos2d::Vec2(700, 100)); // 적절한 위치 설정
-    this->addChild(equipmentButton);
 
-    equipmentButton->init(); // 초기화 호출
 
     auto label = cocos2d::Label::createWithTTF("Gold: 0", "fonts/Marker Felt.ttf", 24);
     label->setPosition(cocos2d::Vec2(640, 600)); // 적절한 위치 설정
