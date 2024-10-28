@@ -51,7 +51,8 @@ bool HelloWorld::init()
         return false;
 
     
-
+    auto defaultButton = new UI_CustomButtons();
+    this->addChild(defaultButton);
 
     auto label = cocos2d::Label::createWithTTF("Gold: 0", "fonts/Marker Felt.ttf", 24);
     label->setPosition(cocos2d::Vec2(640, 600)); // 적절한 위치 설정
